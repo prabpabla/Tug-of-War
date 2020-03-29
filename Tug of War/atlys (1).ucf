@@ -1,0 +1,36 @@
+
+# clock pin for Atlys rev C board
+# NET "CLK_I"   LOC = "L15"; # Bank = 1, Pin name = IO_L42P_GCLK7_M1UDM, Type = GCLK, Sch name = GCLK
+NET "CLK_I" IOSTANDARD = LVCMOS33;
+NET "CLK_I" LOC = L15;
+#NET "BTNM_I" IOSTANDARD = LVCMOS33;
+#NET "BTNM_I" LOC = T15;
+
+# onBoard Leds
+ NET "Led<0>" LOC = "U18"; # Bank = 1, Pin name = IO_L52N_M1DQ15, 	   Sch name = LD0
+ NET "Led<1>" LOC = "M14"; # Bank = 1, Pin name = IO_L53P, 		 	   Sch name = LD1
+ NET "Led<2>" LOC = "N14"; # Bank = 1, Pin name = IO_L53N_VREF, 	   Sch name = LD2
+ NET "Led<3>" LOC = "L14"; # Bank = 1, Pin name = IO_L61P, 		 	   Sch name = LD3
+ NET "Led<4>" LOC = "M13"; # Bank = 1, Pin name = IO_L61N, 		 	   Sch name = LD4
+ NET "Led<5>" LOC = "D4";  # Bank = 0, Pin name = IO_L1P_HSWAPEN_0,	   Sch name = HSWAP/LD5
+ NET "Led<6>" LOC = "P16"; # Bank = 1, Pin name = IO_L74N_DOUT_BUSY_1, Sch name = LD6
+ //NET "Ltest" LOC = "N12"; # Bank = 2, Pin name = IO_L13P_M1_2,		   Sch name = M1/LD7
+ 
+# onBoard PUSH BUTTONS 
+ NET "pbl" LOC = "P4";  # Bank = 3, Pin name = IO_L2P, 	   		   Sch name = BTNL
+ NET "pbr" LOC = "F6";  # Bank = 3, Pin name = IO_L55P_M3A13, 	   Sch name = BTNR
+ 
+ NET "rst" LOC = "N4" ; # Bank = 3 
+ NET "st" LOC = "F5" ;# Bank = 3, Pin name = IO_L55N_M3A14, 	   Sch name = BTNC
+ NET "scorbut" LOC = "P3";# Bank = 3, Pin name = IO_L2N, 	   		   Sch name = BTND
+ NET "speaker" LOC="T3";
+ NET "gain" LOC="R3";
+ NET "sound_shut_down" LOC="N5";
+
+
+
+ //NET "Btest" LOC = "P3";  
+
+ 
+# onBoard SWITCHES
+ //NET "Stest" LOC = "A10"; # Bank = 0, Pin name = IO_L37N_GCLK12,      	Sch name = SW0
